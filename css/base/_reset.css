@@ -1,0 +1,16 @@
+/* Autor: inici4rsesi0n */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

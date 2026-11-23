@@ -1,0 +1,11 @@
+# Entorno
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dependencias (si usas npm luego)
+node_modules/
+
+# Archivos de sistema
+*.log

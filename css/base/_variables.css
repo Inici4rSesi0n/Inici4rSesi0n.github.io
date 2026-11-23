@@ -1,0 +1,19 @@
+/* Autor: inici4rsesi0n */
+:root {
+    --color-bg: #0d1117;
+    --color-text: #c9d1d9;
+    --color-primary: #58a6ff;
+    --color-secondary: #238636;
+    --color-border: #30363d;
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+
+/* Autor: inici4rsesi0n */
+body.light-mode {
+    --color-bg: #ffffff;
+    --color-text: #24292f;
+    --color-border: #d0d7de;
+}

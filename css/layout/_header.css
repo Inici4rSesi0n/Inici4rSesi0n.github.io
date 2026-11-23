@@ -1,0 +1,15 @@
+/* Autor: inici4rsesi0n */
+.header {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
