@@ -34,3 +34,21 @@ color: var(--color-text-muted);
 color: var(--color-magenta);
 text-shadow: 0 0 8px var(--color-magenta);
 }
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 var(--spacing-sm);
+    gap: 0.5rem;
+  }
+
+  .nav__logo {
+    font-size: 0.9rem;
+  }
+
+  .nav__links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+  }
+}
