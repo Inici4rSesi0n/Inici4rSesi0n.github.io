@@ -26,6 +26,10 @@ text-shadow: 1px 0 var(--color-primary);
 animation: glitch-anim-2 7s infinite linear alternate-reverse;
 z-index: -2;
 }
+.text-glitch.no-glitch::before,
+.text-glitch.no-glitch::after {
+animation: none !important;
+}
 @keyframes glitch-anim-1 {
 0%, 90%, 100% { clip-path: inset(0 0 0 0); }
 92% { clip-path: inset(20% 0 80% 0); }
@@ -116,18 +120,11 @@ text-transform: uppercase;
 .card {
 padding: var(--spacing-md);
 position: relative;
-transition: border-color var(--transition);
+transition: border-color var(--transition), box-shadow var(--transition);
 }
 .card:hover {
 border-color: var(--color-primary);
 box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
-}
-.card__cross {
-position: absolute;
-top: 5px;
-right: 10px;
-color: var(--color-border);
-font-family: var(--font-mono);
 }
 .card__title {
 font-size: 1.1rem;
@@ -217,7 +214,9 @@ color: var(--color-text);
 margin-bottom: 0.2rem;
 }
 .certs-grid {
+display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: var(--spacing-md);
 }
 .cert-card {
 display: flex;
@@ -296,6 +295,7 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 .repo-img {
 width: 100%;
+height: auto;
 display: block;
 transition: transform var(--transition);
 }
@@ -359,8 +359,18 @@ color: var(--color-primary);
 font-size: 40px;
 font-weight: bold;
 cursor: pointer;
+background: transparent;
+border: none;
+outline: none;
+box-shadow: none;
 transition: color var(--transition);
 z-index: 1001;
+}
+.image-modal__close:focus,
+.image-modal__close:focus-visible,
+.image-modal__close:active {
+outline: none;
+box-shadow: none;
 }
 .image-modal__close:hover {
 color: var(--color-magenta);
@@ -374,9 +384,19 @@ font-size: 40px;
 font-weight: bold;
 cursor: pointer;
 user-select: none;
+background: transparent;
+border: none;
+outline: none;
+box-shadow: none;
 transition: color var(--transition), transform var(--transition);
 z-index: 1001;
 padding: 10px;
+}
+.image-modal__nav:focus,
+.image-modal__nav:focus-visible,
+.image-modal__nav:active {
+outline: none;
+box-shadow: none;
 }
 .image-modal__nav:hover {
 color: var(--color-magenta);
@@ -387,4 +407,22 @@ left: 20px;
 }
 .image-modal__next {
 right: 20px;
+}
+@media (prefers-reduced-motion: reduce) {
+.text-glitch::before,
+.text-glitch::after,
+.image-modal__content {
+animation: none;
+}
+.card, .skill-badge, .cert-badge, .gallery-frame, .repo-img, .gallery-overlay, .image-modal__close, .image-modal__nav {
+transition: none;
+}
+.gallery-frame:hover .repo-img,
+.skill-badge:hover,
+.cert-badge:hover {
+transform: none;
+}
+.image-modal__nav:hover {
+transform: translateY(-50%);
+}
 }

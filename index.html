@@ -5,34 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="inici4rsesi0n">
 <meta name="description" content="Portafolio de Edson Espinal (inici4rsesi0n) - Backend Developer & Ethical Hacker. Especializado en Java, Spring Boot, Ciberseguridad y Arquitectura Hexagonal.">
+<meta property="og:title" content="inici4rsesi0n | Backend & Cybersecurity">
+<meta property="og:description" content="Portafolio de Edson Espinal (inici4rsesi0n) - Backend Developer & Ethical Hacker.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inici4rSesi0n.github.io/">
+<meta name="twitter:card" content="summary_large_image">
 <title>inici4rsesi0n | Backend & Cybersecurity</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="css/base/_variables.css">
-<link rel="stylesheet" href="css/base/_reset.css">
-<link rel="stylesheet" href="css/layout/_header.css">
-<link rel="stylesheet" href="css/layout/_grid.css">
-<link rel="stylesheet" href="css/components/_buttons.css">
-<link rel="stylesheet" href="css/components/_cards.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div class="crt-overlay"></div>
-<div class="noise-bg"></div>
-<div class="sigil-bg">✝</div>
+<body id="top">
+<div class="crt-overlay" aria-hidden="true"></div>
+<div class="noise-bg" aria-hidden="true"></div>
 <header class="header">
-<nav class="nav">
+<nav class="nav" aria-label="Navegación principal">
 <div class="nav__logo mono-text">
 <span class="text-glitch" data-text="inici4rsesi0n">inici4rsesi0n</span>
-<span class="blink">_</span>
+<span class="blink" aria-hidden="true">_</span>
 </div>
 <div class="nav__links mono-text">
+<a href="#top">/home</a>
 <a href="#skills">/skills</a>
 <a href="#projects">/projects</a>
 <a href="#education">/edu</a>
 <a href="#contact">/contact</a>
-<button id="theme-toggle" class="btn btn--icon" aria-label="Cambiar tema">☀️</button>
+<button id="theme-toggle" class="btn btn--icon" type="button" aria-label="Cambiar tema">☀️</button>
 </div>
 </nav>
 </header>
@@ -47,7 +47,7 @@
 <div class="hero__badge mono-text">[ SYSTEM_ONLINE ]</div>
 <h1 class="hero__title text-glitch" data-text="EDSON_ESPINAL">EDSON_ESPINAL</h1>
 <p class="hero__subtitle mono-text text-cyan">// Backend Developer & Ethical Hacker</p>
-<div class="terminal-log hero__about">
+<div class="terminal-log">
 <p class="mono-text text-magenta">> cat about_me.txt</p>
 <p class="mono-text text-muted">Desarrollador Backend con un fuerte enfoque en ciberseguridad y hacking ético. Me especializo en diseñar e implementar sistemas robustos utilizando Java y Spring Boot, aplicando patrones de arquitectura como Hexagonal y DDD. Disfruto resolver problemas complejos, optimizar el rendimiento y asegurar aplicaciones contra vulnerabilidades. Creo firmemente en el código abierto y en compartir conocimiento a través de mi canal de YouTube.</p>
 </div>
@@ -65,42 +65,39 @@
 </div>
 <div class="skills-layout">
 <article class="card glass-panel skill-card">
-<div class="card__cross">+</div>
 <h3 class="card__title mono-text text-cyan">[ SOFTWARE_DEVELOPMENT ]</h3>
 <div class="skill-tags">
-<img src="https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21" class="skill-badge">
-<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" class="skill-badge">
-<img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" class="skill-badge">
-<img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" alt="Spring Security" class="skill-badge">
-<img src="https://img.shields.io/badge/Spring_Data-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data" class="skill-badge">
-<img src="https://img.shields.io/badge/JavaFX-FF0000?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" class="skill-badge">
-<img src="https://img.shields.io/badge/PostgreSQL_16-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL 16" class="skill-badge">
-<img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven" class="skill-badge">
-<img src="https://img.shields.io/badge/Flyway-CC0200?style=for-the-badge&logo=flyway&logoColor=white" alt="Flyway" class="skill-badge">
-<img src="https://img.shields.io/badge/MapStruct-1E90FF?style=for-the-badge" alt="MapStruct" class="skill-badge">
-<img src="https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="JUnit 5" class="skill-badge">
-<img src="https://img.shields.io/badge/TestFX-FF6F00?style=for-the-badge" alt="TestFX" class="skill-badge">
-<img src="https://img.shields.io/badge/Mockito-FF6F00?style=for-the-badge&logo=mockito&logoColor=white" alt="Mockito" class="skill-badge">
+<img src="https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" alt="Spring Security" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Spring_Data-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/JavaFX-FF0000?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/PostgreSQL_16-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL 16" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Flyway-CC0200?style=for-the-badge&logo=flyway&logoColor=white" alt="Flyway" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/MapStruct-1E90FF?style=for-the-badge" alt="MapStruct" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="JUnit 5" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/TestFX-FF6F00?style=for-the-badge" alt="TestFX" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Mockito-FF6F00?style=for-the-badge&logo=mockito&logoColor=white" alt="Mockito" class="skill-badge" loading="lazy">
 </div>
 <p class="skill-desc"><strong>Architecture:</strong> Hexagonal, SOLID, DDD, modular/pluggable design, Event-Driven (EventBus), Repository & DTO/Mapper patterns, Dependency Injection.<br><strong>Testing:</strong> Unit (JUnit 5, Mockito), UI (TestFX), integration, smoke tests, healthchecks.<br><strong>Build & CI/CD:</strong> Maven, Makefile, GitHub Actions, GitHub Pages, environment config (.env), semantic versioning & CHANGELOG.<br><strong>Observability:</strong> Structured logging, traceability, healthchecks.<br><strong>Frontend:</strong> JavaScript ES6+ (modules, Vanilla JS), HTML5 semantic, CSS3 (variables, Flexbox, Grid, BEM/ITCSS), SPA, responsive/Mobile-First, theming, client-side RBAC & session management (localStorage).<br><strong>Docs & OSS:</strong> Technical documentation, CHANGELOG, DISCLAIMER, open-source licensing (GPL-3.0, MIT).</p>
 </article>
 <article class="card glass-panel skill-card">
-<div class="card__cross">+</div>
-<h3 class="card__title mono-text text-magenta">[ CYBERSECURITY_&_PENTESTING ]</h3>
+<h3 class="card__title mono-text text-magenta">[ CYBERSECURITY_&amp;_PENTESTING ]</h3>
 <div class="skill-tags">
-<img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" alt="Kali Linux" class="skill-badge">
-<img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" class="skill-badge">
+<img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" alt="Kali Linux" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" class="skill-badge" loading="lazy">
 </div>
 <p class="skill-desc"><strong>Methodologies:</strong> MITRE ATT&CK.</p>
 </article>
 <article class="card glass-panel skill-card">
-<div class="card__cross">+</div>
-<h3 class="card__title mono-text text-green">[ NETWORKING_&_INFRASTRUCTURE ]</h3>
+<h3 class="card__title mono-text text-green">[ NETWORKING_&amp;_INFRASTRUCTURE ]</h3>
 <div class="skill-tags">
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" class="skill-badge">
-<img src="https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco IOS" class="skill-badge">
-<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman" class="skill-badge">
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" class="skill-badge">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco IOS" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman" class="skill-badge" loading="lazy">
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" class="skill-badge" loading="lazy">
 </div>
 <p class="skill-desc"><strong>Networking:</strong> VLANs, Trunks, Inter-VLAN Routing, STP/RSTP, EtherChannel, OSPF, IPv4/IPv6, Cisco Packet Tracer.</p>
 </article>
@@ -122,7 +119,7 @@
 </div>
 <div class="timeline__gallery">
 <div class="gallery-frame img-clickable" data-gallery="WiredAcademy">
-<img src="assets/repos/ft-Wired-Academy-principal.png" alt="WiredAcademy Principal" class="repo-img">
+<img src="assets/repos/ft-Wired-Academy-principal.png" alt="WiredAcademy Principal" class="repo-img" loading="lazy">
 <div class="gallery-overlay mono-text">[ +_EXPAND ]</div>
 </div>
 <div id="gallery-WiredAcademy" style="display:none;">
@@ -144,7 +141,7 @@
 </div>
 <div class="timeline__gallery">
 <div class="gallery-frame img-clickable" data-gallery="CyberRange">
-<img src="assets/repos/ft-Wired-CyberRange-atacante.png" alt="CyberRange Atacante" class="repo-img">
+<img src="assets/repos/ft-Wired-CyberRange-atacante.png" alt="CyberRange Atacante" class="repo-img" loading="lazy">
 <div class="gallery-overlay mono-text">[ +_EXPAND ]</div>
 </div>
 <div id="gallery-CyberRange" style="display:none;">
@@ -165,7 +162,7 @@
 </div>
 <div class="timeline__gallery">
 <div class="gallery-frame img-clickable" data-gallery="Enfermeria">
-<img src="assets/repos/ft-EnfermeriaApp-agendarcita.png" alt="Enfermeria Citas" class="repo-img">
+<img src="assets/repos/ft-EnfermeriaApp-agendarcita.png" alt="Enfermeria Citas" class="repo-img" loading="lazy">
 <div class="gallery-overlay mono-text">[ +_EXPAND ]</div>
 </div>
 <div id="gallery-Enfermeria" style="display:none;">
@@ -180,12 +177,11 @@
 </section>
 <section id="education" class="section">
 <div class="section__header">
-<h2 class="section__title text-glitch" data-text="EDUCATION_&_CERTS">EDUCATION_&_CERTS</h2>
+<h2 class="section__title text-glitch" data-text="EDUCATION_&_CERTS">EDUCATION_&amp;_CERTS</h2>
 <span class="mono-text">// 03.SYS_FILES</span>
 </div>
 <div class="edu-layout">
 <article class="card glass-panel edu-card">
-<div class="card__cross">+</div>
 <h3 class="card__title mono-text text-cyan">[ ACADEMIC_DEGREE ]</h3>
 <h4 class="edu-title">Ingeniería de Software</h4>
 <p class="card__text text-muted">Universidad Tecnológica del Perú (UTP)</p>
@@ -193,10 +189,10 @@
 </article>
 <div class="certs-container">
 <h3 class="mono-text text-magenta" style="margin-bottom: 1rem;">> ls -l /credentials/</h3>
-<div class="grid certs-grid">
+<div class="certs-grid">
 <article class="card glass-panel cert-card">
 <div class="cert-header">
-<img src="assets/badges/badge-ethical-hacker.png" alt="Ethical Hacker Badge" class="cert-badge img-clickable">
+<img src="assets/badges/badge-ethical-hacker.png" alt="Ethical Hacker Badge" class="cert-badge img-clickable" loading="lazy">
 <div class="cert-info">
 <h4 class="cert-title">Ethical Hacker</h4>
 <span class="mono-text text-cyan cert-status">[ CISCO_VERIFIED ]</span>
@@ -213,7 +209,7 @@
 </article>
 <article class="card glass-panel cert-card">
 <div class="cert-header">
-<img src="assets/badges/badge-introduction-to-cybersecurity.png" alt="Intro to Cybersecurity Badge" class="cert-badge img-clickable">
+<img src="assets/badges/badge-introduction-to-cybersecurity.png" alt="Intro to Cybersecurity Badge" class="cert-badge img-clickable" loading="lazy">
 <div class="cert-info">
 <h4 class="cert-title">Intro to Cybersecurity</h4>
 <span class="mono-text text-cyan cert-status">[ CISCO_VERIFIED ]</span>
@@ -230,7 +226,7 @@
 </article>
 <article class="card glass-panel cert-card">
 <div class="cert-header">
-<img src="assets/badges/badge-ccna-introduction-to-networks.png" alt="CCNA Badge" class="cert-badge img-clickable">
+<img src="assets/badges/badge-ccna-introduction-to-networks.png" alt="CCNA Badge" class="cert-badge img-clickable" loading="lazy">
 <div class="cert-info">
 <h4 class="cert-title">CCNA: Intro to Networks</h4>
 <span class="mono-text text-cyan cert-status">[ CISCO_VERIFIED ]</span>
@@ -251,44 +247,43 @@
 </section>
 <section id="contact" class="section">
 <div class="section__header">
-<h2 class="section__title text-glitch" data-text="CONTACT_&_NETWORK">CONTACT_&_NETWORK</h2>
+<h2 class="section__title text-glitch" data-text="CONTACT_&_NETWORK">CONTACT_&amp;_NETWORK</h2>
 <span class="mono-text">// 04.CONNECT</span>
 </div>
 <article class="card glass-panel contact-card">
-<div class="card__cross">+</div>
 <p class="mono-text text-cyan" style="margin-bottom: 1rem;">> ./establish_connection.sh</p>
 <p class="card__text text-muted" style="margin-bottom: 1.5rem;">Abierto a oportunidades laborales, colaboraciones en proyectos open-source o simplemente para conversar sobre arquitectura de software y ciberseguridad.</p>
 <div class="social-bar">
-<button id="copy-email" class="social-btn social-btn--email" data-email="inici4rsesi0nwired@gmail.com">
-<i class="fa-solid fa-envelope"></i>
-<span class="mono-text">inici4rsesi0nwired@gmail.com</span>
+<button id="copy-email" class="social-btn social-btn--email" type="button" data-e="aW5pY2k0cnNlc2kwbndpcmVkQGdtYWlsLmNvbQ==">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+<span class="mono-text">Email</span>
 </button>
 <a href="assets/cv/CV_Edson_Espinal.pdf" class="social-btn social-btn--cv" target="_blank" rel="noopener noreferrer" aria-label="Descargar CV">
-<i class="fa-solid fa-file-pdf"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
 <span class="mono-text">CV.pdf</span>
 </a>
 <a href="https://github.com/Inici4rSesi0n" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-<i class="fa-brands fa-github"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
 </a>
 <a href="https://www.linkedin.com/in/edson-manuel-espinal-chumpitaz-b40065452" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-<i class="fa-brands fa-linkedin-in"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
 </a>
 <a href="https://www.youtube.com/@Inici4rSesi0n" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-<i class="fa-brands fa-youtube"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
 </a>
 </div>
-<span id="copy-feedback" class="mono-text text-green" style="display:none; margin-top: 15px; display: block;">[ EMAIL_COPIADO_AL_PORTAPAPELES ]</span>
+<span id="copy-feedback" class="mono-text text-green" style="display:none; margin-top: 15px;" aria-live="polite">[ EMAIL_COPIADO_AL_PORTAPAPELES ]</span>
 </article>
 </section>
 </main>
 <footer class="footer mono-text">
 <p>© <span id="year"></span> inici4rsesi0n. ALL_SYSTEMS_NOMINAL.</p>
 </footer>
-<div id="image-modal" class="image-modal">
-<span class="image-modal__close mono-text">&times;</span>
-<span class="image-modal__nav image-modal__prev mono-text">&#10094;</span>
+<div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-hidden="true">
+<button class="image-modal__close mono-text" type="button" aria-label="Cerrar">&times;</button>
+<button class="image-modal__nav image-modal__prev mono-text" type="button" aria-label="Anterior">&#10094;</button>
 <img class="image-modal__content" id="modal-img" src="" alt="Vista Ampliada">
-<span class="image-modal__nav image-modal__next mono-text">&#10095;</span>
+<button class="image-modal__nav image-modal__next mono-text" type="button" aria-label="Siguiente">&#10095;</button>
 </div>
 <script src="js/main.js" type="module"></script>
 </body>

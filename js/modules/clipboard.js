@@ -1,18 +1,28 @@
+function decodeEmail(encoded) {
+if (!encoded) return '';
+try {
+return atob(encoded);
+} catch {
+return '';
+}
+}
 export function initClipboard() {
 const copyBtn = document.getElementById('copy-email');
 const feedback = document.getElementById('copy-feedback');
 if (!copyBtn || !feedback) return;
 copyBtn.addEventListener('click', async (e) => {
 e.preventDefault();
-const email = copyBtn.getAttribute('data-email');
+const raw = copyBtn.getAttribute('data-e') || copyBtn.getAttribute('data-email') || '';
+const email = copyBtn.hasAttribute('data-e') ? decodeEmail(raw) : raw;
+if (!email) return;
 try {
 if (navigator.clipboard && window.isSecureContext) {
 await navigator.clipboard.writeText(email);
 } else {
-const textArea = document.createElement("textarea");
+const textArea = document.createElement('textarea');
 textArea.value = email;
-textArea.style.position = "absolute";
-textArea.style.left = "-999999px";
+textArea.style.position = 'absolute';
+textArea.style.left = '-999999px';
 document.body.prepend(textArea);
 textArea.select();
 document.execCommand('copy');

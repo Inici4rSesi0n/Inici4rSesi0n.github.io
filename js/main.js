@@ -10,12 +10,13 @@ if (yearSpan) {
 yearSpan.textContent = new Date().getFullYear();
 }
 const glitchElements = document.querySelectorAll('.text-glitch');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reducedMotion) {
 glitchElements.forEach(el => {
 el.addEventListener('mouseover', () => {
-el.style.animation = 'none';
-setTimeout(() => {
-el.style.animation = '';
-}, 200);
+el.classList.add('no-glitch');
+setTimeout(() => el.classList.remove('no-glitch'), 200);
 });
 });
+}
 });

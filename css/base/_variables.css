@@ -4,7 +4,6 @@
 --color-text: #ffffff;
 --color-text-muted: #a1a1aa;
 --color-primary: #00ffff;
---color-primary-hover: #00cccc;
 --color-magenta: #ff00ff;
 --color-green: #00ff00;
 --color-red: #ff0000;
@@ -23,7 +22,6 @@ body.light-mode {
 --color-text: #1e1b4b;
 --color-text-muted: #4a4e69;
 --color-primary: #6a4c93;
---color-primary-hover: #4a2f6d;
 --color-magenta: #d64161;
 --color-green: #2a9d8f;
 --color-border: #b8c0cc;

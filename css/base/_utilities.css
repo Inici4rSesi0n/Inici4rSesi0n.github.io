@@ -1,0 +1,17 @@
+/* Autor: inici4rsesi0n */
+.mono-text {
+font-family: var(--font-mono);
+font-size: 0.85rem;
+letter-spacing: 1px;
+}
+.text-cyan { color: var(--color-primary); text-shadow: 0 0 5px var(--color-primary); }
+.text-magenta { color: var(--color-magenta); text-shadow: 0 0 5px var(--color-magenta); }
+.text-green { color: var(--color-green); text-shadow: 0 0 5px var(--color-green); }
+.text-muted { color: var(--color-text-muted); }
+.blink { animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+.blink {
+animation: none;
+}
+}
