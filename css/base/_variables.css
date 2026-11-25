@@ -1,19 +1,31 @@
 /* Autor: inici4rsesi0n */
 :root {
-    --color-bg: #0d1117;
-    --color-text: #c9d1d9;
-    --color-primary: #58a6ff;
-    --color-secondary: #238636;
-    --color-border: #30363d;
-    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
+--color-bg: #020202;
+--color-text: #ffffff;
+--color-text-muted: #a1a1aa;
+--color-primary: #00ffff;
+--color-primary-hover: #00cccc;
+--color-magenta: #ff00ff;
+--color-green: #00ff00;
+--color-red: #ff0000;
+--color-border: #333333;
+--color-panel: rgba(10, 10, 12, 0.85);
+--font-main: 'Space Grotesk', sans-serif;
+--font-mono: 'Fira Code', monospace;
+--spacing-sm: 0.5rem;
+--spacing-md: 1.5rem;
+--spacing-lg: 3rem;
+--spacing-xl: 5rem;
+--transition: 0.1s linear;
 }
-
-/* Autor: inici4rsesi0n */
 body.light-mode {
-    --color-bg: #ffffff;
-    --color-text: #24292f;
-    --color-border: #d0d7de;
+--color-bg: #dbe4ef;
+--color-text: #1e1b4b;
+--color-text-muted: #4a4e69;
+--color-primary: #6a4c93;
+--color-primary-hover: #4a2f6d;
+--color-magenta: #d64161;
+--color-green: #2a9d8f;
+--color-border: #b8c0cc;
+--color-panel: rgba(235, 240, 248, 0.85);
 }

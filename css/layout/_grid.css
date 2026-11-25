@@ -1,0 +1,104 @@
+/* Autor: inici4rsesi0n */
+.main {
+max-width: 1000px;
+margin: 0 auto;
+padding: var(--spacing-xl) var(--spacing-md);
+display: flex;
+flex-direction: column;
+gap: var(--spacing-xl);
+}
+.hero {
+margin-top: var(--spacing-lg);
+}
+.hero__container {
+display: flex;
+flex-direction: column;
+gap: var(--spacing-lg);
+align-items: flex-start;
+background: var(--color-panel);
+border: 1px solid var(--color-border);
+padding: var(--spacing-lg);
+position: relative;
+}
+.hero__container::before {
+content: '';
+position: absolute;
+top: -1px; left: -1px;
+width: 10px; height: 10px;
+border-top: 2px solid var(--color-primary);
+border-left: 2px solid var(--color-primary);
+}
+.hero__container::after {
+content: '';
+position: absolute;
+bottom: -1px; right: -1px;
+width: 10px; height: 10px;
+border-bottom: 2px solid var(--color-primary);
+border-right: 2px solid var(--color-primary);
+}
+@media (min-width: 768px) {
+.hero__container {
+flex-direction: row;
+align-items: flex-start;
+}
+}
+.section__header {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: var(--spacing-md);
+border-bottom: 1px dashed var(--color-border);
+padding-bottom: var(--spacing-sm);
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: var(--spacing-md);
+}
+.footer {
+text-align: center;
+padding: var(--spacing-lg) 0;
+border-top: 1px solid var(--color-border);
+color: var(--color-text-muted);
+margin-top: var(--spacing-xl);
+}
+.timeline {
+display: flex;
+flex-direction: column;
+gap: var(--spacing-md);
+border-left: 2px solid var(--color-border);
+padding-left: var(--spacing-md);
+margin-left: 10px;
+}
+.timeline__item {
+padding: var(--spacing-md);
+position: relative;
+display: flex;
+flex-direction: column;
+gap: var(--spacing-md);
+}
+@media (min-width: 768px) {
+.timeline__item {
+display: grid;
+grid-template-columns: 1fr 320px;
+gap: var(--spacing-lg);
+align-items: center;
+}
+}
+.timeline__item::before {
+content: '';
+position: absolute;
+left: calc(-1 * var(--spacing-md) - 6px);
+top: 20px;
+width: 10px;
+height: 10px;
+background: var(--color-bg);
+border: 2px solid var(--color-primary);
+border-radius: 50%;
+}
+.timeline__gallery {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}

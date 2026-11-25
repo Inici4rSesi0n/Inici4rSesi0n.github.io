@@ -4,23 +4,292 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="inici4rsesi0n">
-<meta name="description" content="Portafolio de inici4rsesi0n - Backend Developer & Cybersecurity">
+<meta name="description" content="Portafolio de Edson Espinal (inici4rsesi0n) - Backend Developer & Ethical Hacker. Especializado en Java, Spring Boot, Ciberseguridad y Arquitectura Hexagonal.">
 <title>inici4rsesi0n | Backend & Cybersecurity</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/base/_variables.css">
+<link rel="stylesheet" href="css/base/_reset.css">
+<link rel="stylesheet" href="css/layout/_header.css">
+<link rel="stylesheet" href="css/layout/_grid.css">
+<link rel="stylesheet" href="css/components/_buttons.css">
+<link rel="stylesheet" href="css/components/_cards.css">
 </head>
 <body>
+<div class="crt-overlay"></div>
+<div class="noise-bg"></div>
+<div class="sigil-bg">✝</div>
 <header class="header">
 <nav class="nav">
-<a href="#" class="nav__logo">inici4rsesi0n</a>
-<button id="theme-toggle" class="btn btn--icon" aria-label="Cambiar tema">🌙</button>
+<div class="nav__logo mono-text">
+<span class="text-glitch" data-text="inici4rsesi0n">inici4rsesi0n</span>
+<span class="blink">_</span>
+</div>
+<div class="nav__links mono-text">
+<a href="#skills">/skills</a>
+<a href="#projects">/projects</a>
+<a href="#education">/edu</a>
+<a href="#contact">/contact</a>
+<button id="theme-toggle" class="btn btn--icon" aria-label="Cambiar tema">☀️</button>
+</div>
 </nav>
 </header>
 <main class="main">
 <section class="hero">
-<h1 class="hero__title">Backend Developer & Ethical Hacker</h1>
-<p class="hero__subtitle">Construyendo software seguro, escalable y de código abierto.</p>
+<div class="hero__container">
+<div class="hero__avatar-box">
+<div class="hero__avatar-inner mono-text">EE</div>
+<div class="hero__status-badge mono-text">ONLINE</div>
+</div>
+<div class="hero__content">
+<div class="hero__badge mono-text">[ SYSTEM_ONLINE ]</div>
+<h1 class="hero__title text-glitch" data-text="EDSON_ESPINAL">EDSON_ESPINAL</h1>
+<p class="hero__subtitle mono-text text-cyan">// Backend Developer & Ethical Hacker</p>
+<div class="terminal-log hero__about">
+<p class="mono-text text-magenta">> cat about_me.txt</p>
+<p class="mono-text text-muted">Desarrollador Backend con un fuerte enfoque en ciberseguridad y hacking ético. Me especializo en diseñar e implementar sistemas robustos utilizando Java y Spring Boot, aplicando patrones de arquitectura como Hexagonal y DDD. Disfruto resolver problemas complejos, optimizar el rendimiento y asegurar aplicaciones contra vulnerabilidades. Creo firmemente en el código abierto y en compartir conocimiento a través de mi canal de YouTube.</p>
+</div>
+<div class="hero__actions">
+<a href="assets/cv/CV_Edson_Espinal.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">[ DESCARGAR_CV ]</a>
+<a href="#contact" class="btn btn--outline">[ CONTACTAR ]</a>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="section">
+<div class="section__header">
+<h2 class="section__title text-glitch" data-text="TECHNICAL_SKILLS">TECHNICAL_SKILLS</h2>
+<span class="mono-text">// 01.CAPABILITIES</span>
+</div>
+<div class="skills-layout">
+<article class="card glass-panel skill-card">
+<div class="card__cross">+</div>
+<h3 class="card__title mono-text text-cyan">[ SOFTWARE_DEVELOPMENT ]</h3>
+<div class="skill-tags">
+<img src="https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21" class="skill-badge">
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" class="skill-badge">
+<img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" class="skill-badge">
+<img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring-security&logoColor=white" alt="Spring Security" class="skill-badge">
+<img src="https://img.shields.io/badge/Spring_Data-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data" class="skill-badge">
+<img src="https://img.shields.io/badge/JavaFX-FF0000?style=for-the-badge&logo=java&logoColor=white" alt="JavaFX" class="skill-badge">
+<img src="https://img.shields.io/badge/PostgreSQL_16-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL 16" class="skill-badge">
+<img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven" class="skill-badge">
+<img src="https://img.shields.io/badge/Flyway-CC0200?style=for-the-badge&logo=flyway&logoColor=white" alt="Flyway" class="skill-badge">
+<img src="https://img.shields.io/badge/MapStruct-1E90FF?style=for-the-badge" alt="MapStruct" class="skill-badge">
+<img src="https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="JUnit 5" class="skill-badge">
+<img src="https://img.shields.io/badge/TestFX-FF6F00?style=for-the-badge" alt="TestFX" class="skill-badge">
+<img src="https://img.shields.io/badge/Mockito-FF6F00?style=for-the-badge&logo=mockito&logoColor=white" alt="Mockito" class="skill-badge">
+</div>
+<p class="skill-desc"><strong>Architecture:</strong> Hexagonal, SOLID, DDD, modular/pluggable design, Event-Driven (EventBus), Repository & DTO/Mapper patterns, Dependency Injection.<br><strong>Testing:</strong> Unit (JUnit 5, Mockito), UI (TestFX), integration, smoke tests, healthchecks.<br><strong>Build & CI/CD:</strong> Maven, Makefile, GitHub Actions, GitHub Pages, environment config (.env), semantic versioning & CHANGELOG.<br><strong>Observability:</strong> Structured logging, traceability, healthchecks.<br><strong>Frontend:</strong> JavaScript ES6+ (modules, Vanilla JS), HTML5 semantic, CSS3 (variables, Flexbox, Grid, BEM/ITCSS), SPA, responsive/Mobile-First, theming, client-side RBAC & session management (localStorage).<br><strong>Docs & OSS:</strong> Technical documentation, CHANGELOG, DISCLAIMER, open-source licensing (GPL-3.0, MIT).</p>
+</article>
+<article class="card glass-panel skill-card">
+<div class="card__cross">+</div>
+<h3 class="card__title mono-text text-magenta">[ CYBERSECURITY_&_PENTESTING ]</h3>
+<div class="skill-tags">
+<img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" alt="Kali Linux" class="skill-badge">
+<img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" class="skill-badge">
+</div>
+<p class="skill-desc"><strong>Methodologies:</strong> MITRE ATT&CK.</p>
+</article>
+<article class="card glass-panel skill-card">
+<div class="card__cross">+</div>
+<h3 class="card__title mono-text text-green">[ NETWORKING_&_INFRASTRUCTURE ]</h3>
+<div class="skill-tags">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" class="skill-badge">
+<img src="https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco IOS" class="skill-badge">
+<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman" class="skill-badge">
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" class="skill-badge">
+</div>
+<p class="skill-desc"><strong>Networking:</strong> VLANs, Trunks, Inter-VLAN Routing, STP/RSTP, EtherChannel, OSPF, IPv4/IPv6, Cisco Packet Tracer.</p>
+</article>
+</div>
+</section>
+<section id="projects" class="section">
+<div class="section__header">
+<h2 class="section__title text-glitch" data-text="PROJECT_EXPERIENCE">PROJECT_EXPERIENCE</h2>
+<span class="mono-text">// 02.ARCHIVES</span>
+</div>
+<div class="timeline">
+<div class="timeline__item glass-panel">
+<div class="timeline__content">
+<div class="timeline__date mono-text text-cyan">[ WIRED_ACADEMY ]</div>
+<h3 class="timeline__title">Ecosistema Educativo Open-Source</h3>
+<p class="timeline__company mono-text text-magenta">Java 21 • Spring Boot • PostgreSQL • Hexagonal Architecture</p>
+<p class="timeline__desc">Diseño y desarrollo de un sistema de gestión académica multi-institución. Implementación de arquitectura hexagonal para desacoplar el dominio de la infraestructura. Migraciones con Flyway y pruebas unitarias con JUnit.</p>
+<a href="https://github.com/Inici4rSesi0n/WiredAcademy" class="btn btn--small btn--inline" target="_blank" rel="noopener noreferrer">[ ACCESS_DATA ]</a>
+</div>
+<div class="timeline__gallery">
+<div class="gallery-frame img-clickable" data-gallery="WiredAcademy">
+<img src="assets/repos/ft-Wired-Academy-principal.png" alt="WiredAcademy Principal" class="repo-img">
+<div class="gallery-overlay mono-text">[ +_EXPAND ]</div>
+</div>
+<div id="gallery-WiredAcademy" style="display:none;">
+<img src="assets/repos/ft-Wired-Academy-principal.png" alt="WiredAcademy Principal">
+<img src="assets/repos/ft-Wired-Academy-dashboard.png" alt="WiredAcademy Dashboard">
+<img src="assets/repos/ft-Wired-Academy-login.png" alt="WiredAcademy Login">
+<img src="assets/repos/ft-Wired-Academy-crud%20usuarios.png" alt="WiredAcademy CRUD">
+<img src="assets/repos/ft-Wired-Academy-horarios.png" alt="WiredAcademy Horarios">
+</div>
+</div>
+</div>
+<div class="timeline__item glass-panel">
+<div class="timeline__content">
+<div class="timeline__date mono-text text-cyan">[ WIRED_CYBERRANGE ]</div>
+<h3 class="timeline__title">Laboratorio de Pentesting Reproducible</h3>
+<p class="timeline__company mono-text text-magenta">Podman Rootless • Kali Linux • Metasploit • Redes</p>
+<p class="timeline__desc">Entorno de laboratorio diseñado para entrenamiento en ciberseguridad ofensiva. Red aislada con contenedores vulnerables preconfigurados y contenedor atacante, automatizado mediante scripts de despliegue.</p>
+<a href="https://github.com/Inici4rSesi0n/Wired-CyberRange" class="btn btn--small btn--inline" target="_blank" rel="noopener noreferrer">[ ACCESS_DATA ]</a>
+</div>
+<div class="timeline__gallery">
+<div class="gallery-frame img-clickable" data-gallery="CyberRange">
+<img src="assets/repos/ft-Wired-CyberRange-atacante.png" alt="CyberRange Atacante" class="repo-img">
+<div class="gallery-overlay mono-text">[ +_EXPAND ]</div>
+</div>
+<div id="gallery-CyberRange" style="display:none;">
+<img src="assets/repos/ft-Wired-CyberRange-atacante.png" alt="CyberRange Atacante">
+<img src="assets/repos/ft-Wired-CyberRange-DVWA.png" alt="CyberRange DVWA">
+<img src="assets/repos/ft-Wired-CyberRange-OWASP.png" alt="CyberRange OWASP">
+<img src="assets/repos/ft-Wired-CyberRange-perfiles.png" alt="CyberRange Perfiles">
+</div>
+</div>
+</div>
+<div class="timeline__item glass-panel">
+<div class="timeline__content">
+<div class="timeline__date mono-text text-cyan">[ ENFERMERIA_APP ]</div>
+<h3 class="timeline__title">Aplicación Web SPA Clínica</h3>
+<p class="timeline__company mono-text text-magenta">HTML5 • CSS3 • Vanilla JavaScript (ES6)</p>
+<p class="timeline__desc">Desarrollo frontend de una aplicación para gestión de citas, esquemas de vacunación y triaje de síntomas. Interfaz mobile-first con persistencia de datos local.</p>
+<a href="https://github.com/Inici4rSesi0n/EnfermeriaApp" class="btn btn--small btn--inline" target="_blank" rel="noopener noreferrer">[ ACCESS_DATA ]</a>
+</div>
+<div class="timeline__gallery">
+<div class="gallery-frame img-clickable" data-gallery="Enfermeria">
+<img src="assets/repos/ft-EnfermeriaApp-agendarcita.png" alt="Enfermeria Citas" class="repo-img">
+<div class="gallery-overlay mono-text">[ +_EXPAND ]</div>
+</div>
+<div id="gallery-Enfermeria" style="display:none;">
+<img src="assets/repos/ft-EnfermeriaApp-agendarcita.png" alt="Enfermeria Citas">
+<img src="assets/repos/ft-EnfermeriaApp-dashboard.png" alt="Enfermeria Dashboard">
+<img src="assets/repos/ft-EnfermeriaApp-login.png" alt="Enfermeria Login">
+<img src="assets/repos/ft-EnfermeriaApp-QR.png" alt="Enfermeria QR">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="education" class="section">
+<div class="section__header">
+<h2 class="section__title text-glitch" data-text="EDUCATION_&_CERTS">EDUCATION_&_CERTS</h2>
+<span class="mono-text">// 03.SYS_FILES</span>
+</div>
+<div class="edu-layout">
+<article class="card glass-panel edu-card">
+<div class="card__cross">+</div>
+<h3 class="card__title mono-text text-cyan">[ ACADEMIC_DEGREE ]</h3>
+<h4 class="edu-title">Ingeniería de Software</h4>
+<p class="card__text text-muted">Universidad Tecnológica del Perú (UTP)</p>
+<p class="mono-text text-green" style="margin-top: 10px;">[ EN CURSO ]</p>
+</article>
+<div class="certs-container">
+<h3 class="mono-text text-magenta" style="margin-bottom: 1rem;">> ls -l /credentials/</h3>
+<div class="grid certs-grid">
+<article class="card glass-panel cert-card">
+<div class="cert-header">
+<img src="assets/badges/badge-ethical-hacker.png" alt="Ethical Hacker Badge" class="cert-badge img-clickable">
+<div class="cert-info">
+<h4 class="cert-title">Ethical Hacker</h4>
+<span class="mono-text text-cyan cert-status">[ CISCO_VERIFIED ]</span>
+</div>
+</div>
+<div class="cert-meta">
+<p class="mono-text text-muted">Issued: Oct 2026</p>
+<p class="mono-text text-muted cert-id">ID: 4b4173ed-a18c-4d32-aa20-4e52f66a3a1d</p>
+</div>
+<div class="cert-actions">
+<a href="assets/certs/ethical-hacker.pdf" class="btn btn--small" target="_blank" rel="noopener noreferrer">[ VIEW_PDF ]</a>
+<a href="https://www.credly.com/badges/c9cf6e44-a99d-4363-86c2-8cd07e8a713d/public_url" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">[ VERIFY ]</a>
+</div>
+</article>
+<article class="card glass-panel cert-card">
+<div class="cert-header">
+<img src="assets/badges/badge-introduction-to-cybersecurity.png" alt="Intro to Cybersecurity Badge" class="cert-badge img-clickable">
+<div class="cert-info">
+<h4 class="cert-title">Intro to Cybersecurity</h4>
+<span class="mono-text text-cyan cert-status">[ CISCO_VERIFIED ]</span>
+</div>
+</div>
+<div class="cert-meta">
+<p class="mono-text text-muted">Issued: Aug 2026</p>
+<p class="mono-text text-muted cert-id">ID: 87b07b89-5db8-4936-96b3-056f57b1b89f</p>
+</div>
+<div class="cert-actions">
+<a href="assets/certs/intro-cybersecurity.pdf" class="btn btn--small" target="_blank" rel="noopener noreferrer">[ VIEW_PDF ]</a>
+<a href="https://www.credly.com/badges/09c24f61-fe5e-4370-a4b6-4a72220e91ac/public_url" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">[ VERIFY ]</a>
+</div>
+</article>
+<article class="card glass-panel cert-card">
+<div class="cert-header">
+<img src="assets/badges/badge-ccna-introduction-to-networks.png" alt="CCNA Badge" class="cert-badge img-clickable">
+<div class="cert-info">
+<h4 class="cert-title">CCNA: Intro to Networks</h4>
+<span class="mono-text text-cyan cert-status">[ CISCO_VERIFIED ]</span>
+</div>
+</div>
+<div class="cert-meta">
+<p class="mono-text text-muted">Issued: Aug 2026</p>
+<p class="mono-text text-muted cert-id">ID: 7d33a4e8-9190-44c3-a133-4e0d3a483651</p>
+</div>
+<div class="cert-actions">
+<a href="assets/certs/ccna-intro-networks.pdf" class="btn btn--small" target="_blank" rel="noopener noreferrer">[ VIEW_PDF ]</a>
+<a href="https://www.credly.com/badges/1e7d4041-b840-4323-94c9-915a054807b4/public_url" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">[ VERIFY ]</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section">
+<div class="section__header">
+<h2 class="section__title text-glitch" data-text="CONTACT_&_NETWORK">CONTACT_&_NETWORK</h2>
+<span class="mono-text">// 04.CONNECT</span>
+</div>
+<article class="card glass-panel contact-card">
+<div class="card__cross">+</div>
+<p class="mono-text text-cyan" style="margin-bottom: 1rem;">> ./establish_connection.sh</p>
+<p class="card__text text-muted" style="margin-bottom: 1.5rem;">Abierto a oportunidades laborales, colaboraciones en proyectos open-source o simplemente para conversar sobre arquitectura de software y ciberseguridad.</p>
+<div class="social-bar">
+<button id="copy-email" class="social-btn social-btn--email" data-email="inici4rsesi0nwired@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+<span class="mono-text">inici4rsesi0nwired@gmail.com</span>
+</button>
+<a href="assets/cv/CV_Edson_Espinal.pdf" class="social-btn social-btn--cv" target="_blank" rel="noopener noreferrer" aria-label="Descargar CV">
+<i class="fa-solid fa-file-pdf"></i>
+<span class="mono-text">CV.pdf</span>
+</a>
+<a href="https://github.com/Inici4rSesi0n" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+<i class="fa-brands fa-github"></i>
+</a>
+<a href="https://www.linkedin.com/in/edson-manuel-espinal-chumpitaz-b40065452" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+<a href="https://www.youtube.com/@Inici4rSesi0n" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+<i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+<span id="copy-feedback" class="mono-text text-green" style="display:none; margin-top: 15px; display: block;">[ EMAIL_COPIADO_AL_PORTAPAPELES ]</span>
+</article>
 </section>
 </main>
+<footer class="footer mono-text">
+<p>© <span id="year"></span> inici4rsesi0n. ALL_SYSTEMS_NOMINAL.</p>
+</footer>
+<div id="image-modal" class="image-modal">
+<span class="image-modal__close mono-text">&times;</span>
+<span class="image-modal__nav image-modal__prev mono-text">&#10094;</span>
+<img class="image-modal__content" id="modal-img" src="" alt="Vista Ampliada">
+<span class="image-modal__nav image-modal__next mono-text">&#10095;</span>
+</div>
 <script src="js/main.js" type="module"></script>
 </body>
 </html>
