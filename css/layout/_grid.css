@@ -105,12 +105,16 @@ align-items: center;
 
 @media (max-width: 767px) {
   .main {
-    padding: var(--spacing-lg) var(--spacing-sm);
+    padding: 5.5rem var(--spacing-sm) var(--spacing-lg);
     gap: var(--spacing-lg);
   }
 
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
   .hero {
-    margin-top: var(--spacing-md);
+    margin-top: 0.25rem;
   }
 
   .hero__container {
