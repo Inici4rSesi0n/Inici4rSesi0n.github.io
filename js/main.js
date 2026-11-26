@@ -1,6 +1,7 @@
 import { initThemeToggle } from './modules/theme-toggle.js';
 import { initClipboard } from './modules/clipboard.js';
 import { initImageModal } from './modules/image-modal.js';
+import { initScrollSpy } from './modules/scrollspy.js';
 document.addEventListener('DOMContentLoaded', () => {
 initThemeToggle();
 initClipboard();
@@ -16,6 +17,7 @@ glitchElements.forEach(el => {
 el.addEventListener('mouseover', () => {
 el.classList.add('no-glitch');
 setTimeout(() => el.classList.remove('no-glitch'), 200);
+  initScrollSpy();
 });
 });
 }
