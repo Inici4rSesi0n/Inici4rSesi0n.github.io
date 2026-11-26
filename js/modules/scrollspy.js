@@ -23,23 +23,24 @@ export function initScrollSpy() {
   }
 
   function updateActiveSection() {
-    if (window.scrollY < 140) {
+    if (window.scrollY < 120) {
       setActive('top');
       return;
     }
 
-    const offset = window.scrollY + 180;
-    let current = sections[0]?.id || 'top';
+    const triggerLine = 140;
+    let current = 'top';
 
     for (const item of sections) {
       if (item.id === 'top') continue;
-      if (item.el.offsetTop <= offset) {
+      const top = item.el.getBoundingClientRect().top;
+      if (top <= triggerLine) {
         current = item.id;
       }
     }
 
     const nearBottom =
-      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60;
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 40;
     if (nearBottom) {
       current = 'contact';
     }

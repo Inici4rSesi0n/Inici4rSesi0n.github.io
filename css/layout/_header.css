@@ -67,3 +67,10 @@ text-shadow: 0 0 8px var(--color-magenta);
   text-shadow: 0 0 8px var(--color-primary);
   font-weight: 600;
 }
+
+.nav__links a.is-active,
+.nav__links a[aria-current="page"] {
+  color: var(--color-primary);
+  text-shadow: 0 0 8px var(--color-primary);
+  font-weight: 600;
+}
